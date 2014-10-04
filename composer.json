@@ -1,0 +1,28 @@
+{
+  "name": "drupal/drupal",
+  "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+  "type": "drupal",
+  "license": "GPL-2.0+",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:davidbarratt/drupal-core.git"
+    }
+  ],
+  "require": {
+    "davidbarratt/custom-installer": "1.0.*@alpha",
+    "drupal/core": "dev-composer_split",
+    "doctrine/common": "dev-master#a45d110f71c323e29f41eb0696fa230e3fa1b1b5",
+    "kriswallsmith/assetic": "1.1.*@alpha",
+    "phpunit/phpunit-mock-objects": "dev-master#e60bb929c50ae4237aaf680a4f6773f4ee17f0a2"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "autoloader-suffix": "Drupal8"
+  },
+  "extra": {
+    "custom-installer": {
+      "drupal-core": "core"
+    }
+  }
+}
