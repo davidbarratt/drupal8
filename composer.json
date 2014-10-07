@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "davidbarratt/custom-installer": "1.0.*@alpha",
+    "davidbarratt/custom-installer": "~1.0",
     "drupal/core": "dev-composer_split"
   },
   "minimum-stability": "dev",

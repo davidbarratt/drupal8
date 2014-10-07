@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a3926d214a1c41d376d816fa84fb561b",
+    "hash": "edf8e17e6060724e920d12e1dcd09526",
     "packages": [
         {
             "name": "davidbarratt/custom-installer",
@@ -498,12 +498,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidbarratt/drupal-core.git",
-                "reference": "f9f7a2948ba96820ec8c7e9eb759807112a0114a"
+                "reference": "b90c3334e5238572feb9b39757da1071ab8486fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidbarratt/drupal-core/zipball/f9f7a2948ba96820ec8c7e9eb759807112a0114a",
-                "reference": "f9f7a2948ba96820ec8c7e9eb759807112a0114a",
+                "url": "https://api.github.com/repos/davidbarratt/drupal-core/zipball/b90c3334e5238572feb9b39757da1071ab8486fa",
+                "reference": "b90c3334e5238572feb9b39757da1071ab8486fa",
                 "shasum": ""
             },
             "require": {
@@ -529,7 +529,7 @@
                 "symfony/routing": "2.5.*",
                 "symfony/serializer": "2.5.*",
                 "symfony/validator": "2.5.*",
-                "symfony/yaml": "2.5.*",
+                "symfony/yaml": "dev-master#089129be9f9828f41f0f345e09ff322ecf92cfb2",
                 "twig/twig": "1.15.*",
                 "zendframework/zend-feed": "2.2.*"
             },
@@ -538,7 +538,7 @@
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
                     "Drupal\\Component\\": "lib/Drupal/Component",
-                    "Drupal\\Driver\\": "lib/Drupal/Driver"
+                    "Drupal\\Driver\\": "../drivers/lib/Drupal/Driver"
                 },
                 "files": [
                     "lib/Drupal.php"
@@ -551,7 +551,7 @@
             "support": {
                 "source": "https://github.com/davidbarratt/drupal-core/tree/composer_split"
             },
-            "time": "2014-10-04 22:10:00"
+            "time": "2014-10-07 11:02:16"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -2408,17 +2408,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.5.5",
+            "version": "dev-master",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "b1dbc53593b98c2d694ebf383660ac9134d30b96"
+                "reference": "499f7d7aa96747ad97940089bd7a1fb24ad8182a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b1dbc53593b98c2d694ebf383660ac9134d30b96",
-                "reference": "b1dbc53593b98c2d694ebf383660ac9134d30b96",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/499f7d7aa96747ad97940089bd7a1fb24ad8182a",
+                "reference": "499f7d7aa96747ad97940089bd7a1fb24ad8182a",
                 "shasum": ""
             },
             "require": {
@@ -2427,7 +2427,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -2451,7 +2451,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-22 09:14:18"
+            "time": "2014-10-05 13:53:50"
         },
         {
             "name": "twig/twig",
@@ -2651,7 +2651,6 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "davidbarratt/custom-installer": 15,
         "drupal/core": 20
     },
     "prefer-stable": true,
