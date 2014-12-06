@@ -5,7 +5,11 @@
   "license": "GPL-2.0+",
   "require": {
     "davidbarratt/custom-installer": "~1.0",
-    "drupal/core": "~8.0"
+    "drupal/core": "~8.0",
+    "drupal/xero": "~8.0",
+    "drupal/omnipay": "~8.0",
+    "davidbarratt/test1": "~8.0",
+    "davidbarratt/test2": "~8.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -13,6 +17,14 @@
     {
       "type": "vcs",
       "url": "git@github.com:davidbarratt/drupal-core.git"
+    },
+    {
+      "type": "composer",
+      "url": "http://davidwbarratt.com"
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/mradcliffe/xerobundle"
     }
   ],
   "config": {
