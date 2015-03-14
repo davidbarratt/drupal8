@@ -18,7 +18,6 @@
     }
   ],
   "config": {
-    "preferred-install": "dist",
     "autoloader-suffix": "Drupal8"
   },
   "extra": {

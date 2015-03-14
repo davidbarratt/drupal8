@@ -12,6 +12,11 @@ web/sites/simpletest
 # Ignore all sites except for default
 web/sites/*
 !web/sites/default
+!web/sites/development.services.yml
+!web/sites/example.settings.local.php
+!web/sites/example.sites.php
+!web/sites/README.txt
+!web/sites/sites.php
 
 # Ignore Drupal Core and Vendor Files.
 web/core
