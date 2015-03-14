@@ -5,14 +5,16 @@
   "license": "GPL-2.0+",
   "require": {
     "davidbarratt/custom-installer": "~1.0",
-    "drupal/core": "~8.0"
+    "composer/installers": "^1.0.20",
+    "drupal/core": "~8.0",
+    "davidbarratt/davidwbarratt": "dev-develop"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:davidbarratt/drupal-core.git"
+      "url": "git@github.com:davidbarratt/davidwbarratt.git"
     }
   ],
   "config": {
@@ -20,14 +22,11 @@
     "autoloader-suffix": "Drupal8"
   },
   "extra": {
-    "custom-installer": {
-      "drupal-core": "core"
+    "installer-paths": {
+      "web/core": ["type:drupal-core"]
     },
-    "_readme": [
-      "This is an example file to show how a Drupal website can be managed via",
-      "Composer. It does not work out of the box but requires a Git subtree",
-      "split of the core directory to be added to the repositories",
-      "section above."
-    ]
+    "custom-installer": {
+      "drupal-site": "web/sites/{$name}"
+    }
   }
 }
