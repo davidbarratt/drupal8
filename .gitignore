@@ -20,4 +20,5 @@ web/sites/*
 
 # Ignore Drupal Core and Vendor Files.
 web/core
+web/profiles
 vendor

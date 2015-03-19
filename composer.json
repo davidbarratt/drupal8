@@ -1,5 +1,5 @@
 {
-  "name": "drupal/drupal",
+  "name": "davidwbarratt/drupal8",
   "description": "Drupal is an open source content management platform powering millions of websites and applications.",
   "type": "project",
   "license": "GPL-2.0+",
@@ -7,11 +7,19 @@
     "davidbarratt/custom-installer": "~1.0",
     "composer/installers": "^1.0.20",
     "drupal/core": "~8.0",
+    "drupal/config_installer": "8.1.*@dev",
     "davidbarratt/davidwbarratt": "dev-develop"
+  },
+  "replace": {
+    "drupal/drupal": "~8.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packagist.drupal-composer.org"
+    },
     {
       "type": "vcs",
       "url": "git@github.com:davidbarratt/davidwbarratt.git"
@@ -22,7 +30,8 @@
   },
   "extra": {
     "installer-paths": {
-      "web/core": ["type:drupal-core"]
+      "web/core": ["type:drupal-core"],
+      "web/profiles/{$name}": ["type:drupal-profile"]
     },
     "custom-installer": {
       "drupal-site": "web/sites/{$name}"
