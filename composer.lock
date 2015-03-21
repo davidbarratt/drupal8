@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b746c416df2e520c1a1f8dd60c751f29",
+    "hash": "7f1431c6ec9309ba628d096d149a5ff0",
     "packages": [
         {
             "name": "composer/installers",
@@ -145,12 +145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidbarratt/davidwbarratt.git",
-                "reference": "45c5e75af6f4686de54b442c4d3b1297d6e2f56e"
+                "reference": "fdc4a3fe68f0495464cc780ee8af3227e53aa826"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidbarratt/davidwbarratt/zipball/45c5e75af6f4686de54b442c4d3b1297d6e2f56e",
-                "reference": "45c5e75af6f4686de54b442c4d3b1297d6e2f56e",
+                "url": "https://api.github.com/repos/davidbarratt/davidwbarratt/zipball/fdc4a3fe68f0495464cc780ee8af3227e53aa826",
+                "reference": "fdc4a3fe68f0495464cc780ee8af3227e53aa826",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 "source": "https://github.com/davidbarratt/davidwbarratt/tree/develop",
                 "issues": "https://github.com/davidbarratt/davidwbarratt/issues"
             },
-            "time": "2015-03-15 22:48:59"
+            "time": "2015-03-14 02:15:10"
         },
         {
             "name": "doctrine/annotations",
@@ -2992,12 +2992,61 @@
             "time": "2015-03-12 16:55:53"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "drupal/devel",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/devel",
+                "reference": "2df5df2706f53d16372bb2990eaef8c4db10631f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/devel-8.x-1.x-dev.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "8.*"
+            },
+            "replace": {
+                "drupal/devel_generate": "self.version",
+                "drupal/devel_node_access": "self.version",
+                "drupal/kint": "self.version"
+            },
+            "suggest": {
+                "drupal/menu_ui": "Required by drupal/devel_node_access"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "email": "weitzman@tejasa.com",
+                    "homepage": "https://github.com/weitzman",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "http://drupal.org/project/devel",
+            "time": "2015-03-18 20:45:37"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/config_installer": 20,
-        "davidbarratt/davidwbarratt": 20
+        "davidbarratt/davidwbarratt": 20,
+        "drupal/devel": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

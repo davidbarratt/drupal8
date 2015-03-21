@@ -10,6 +10,9 @@
     "drupal/config_installer": "8.1.*@dev",
     "davidbarratt/davidwbarratt": "dev-develop"
   },
+  "require-dev": {
+    "drupal/devel": "8.1.*@dev"
+  },
   "replace": {
     "drupal/drupal": "~8.0"
   },
@@ -31,7 +34,8 @@
   "extra": {
     "installer-paths": {
       "web/core": ["type:drupal-core"],
-      "web/profiles/{$name}": ["type:drupal-profile"]
+      "web/profiles/{$name}": ["type:drupal-profile"],
+      "web/modules/{$name}": ["type:drupal-module"]
     },
     "custom-installer": {
       "drupal-site": "web/sites/{$name}"
