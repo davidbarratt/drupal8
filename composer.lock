@@ -145,16 +145,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidbarratt/davidwbarratt.git",
-                "reference": "2fa46438aade7957c0f3874a6e0865d33cf00e80"
+                "reference": "a67e55885d5c1618aea7bf5b774293289dae2c56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidbarratt/davidwbarratt/zipball/2fa46438aade7957c0f3874a6e0865d33cf00e80",
-                "reference": "2fa46438aade7957c0f3874a6e0865d33cf00e80",
+                "url": "https://api.github.com/repos/davidbarratt/davidwbarratt/zipball/a67e55885d5c1618aea7bf5b774293289dae2c56",
+                "reference": "a67e55885d5c1618aea7bf5b774293289dae2c56",
                 "shasum": ""
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "~8.0",
+                "drupal/markdown": "8.1.*"
             },
             "type": "drupal-site",
             "license": [
@@ -165,7 +166,7 @@
                 "source": "https://github.com/davidbarratt/davidwbarratt/tree/develop",
                 "issues": "https://github.com/davidbarratt/davidwbarratt/issues"
             },
-            "time": "2015-03-23 02:37:52"
+            "time": "2015-03-28 19:59:29"
         },
         {
             "name": "doctrine/annotations",
@@ -726,6 +727,68 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2015-02-24 23:52:34"
+        },
+        {
+            "name": "drupal/libraries",
+            "version": "dev-8.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/libraries",
+                "reference": "d9972014c6b4bdb7bbbfc4c6a19e0868efa15d00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/libraries-8.x-3.x-dev.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows version-dependent and shared usage of external libraries.",
+            "homepage": "http://drupal.org/project/libraries",
+            "time": "2015-02-18 16:17:34"
+        },
+        {
+            "name": "drupal/markdown",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/markdown",
+                "reference": "03d4b687587920b51850267989c82e799d259f42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/markdown-8.x-1.x-dev.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "8.*",
+                "drupal/libraries": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows content to be submitted using Markdown, a simple plain-text syntax that is transformed into valid HTML.",
+            "time": "2015-03-23 12:11:47"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -2999,7 +3062,7 @@
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/devel",
-                "reference": "797c6410437968d2337882f2b6751a956da63c4b"
+                "reference": "6de0aa135b78edf2825788d830c2ced4872263c5"
             },
             "dist": {
                 "type": "zip",
@@ -3038,7 +3101,7 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2015-03-24 20:00:01"
+            "time": "2015-03-28 17:51:36"
         }
     ],
     "aliases": [],
