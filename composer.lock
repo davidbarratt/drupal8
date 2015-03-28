@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f1431c6ec9309ba628d096d149a5ff0",
+    "hash": "142cd727d3bbaae789bb915cd2bffbaa",
     "packages": [
         {
             "name": "composer/installers",
@@ -145,12 +145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidbarratt/davidwbarratt.git",
-                "reference": "fdc4a3fe68f0495464cc780ee8af3227e53aa826"
+                "reference": "2fa46438aade7957c0f3874a6e0865d33cf00e80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidbarratt/davidwbarratt/zipball/fdc4a3fe68f0495464cc780ee8af3227e53aa826",
-                "reference": "fdc4a3fe68f0495464cc780ee8af3227e53aa826",
+                "url": "https://api.github.com/repos/davidbarratt/davidwbarratt/zipball/2fa46438aade7957c0f3874a6e0865d33cf00e80",
+                "reference": "2fa46438aade7957c0f3874a6e0865d33cf00e80",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 "source": "https://github.com/davidbarratt/davidwbarratt/tree/develop",
                 "issues": "https://github.com/davidbarratt/davidwbarratt/issues"
             },
-            "time": "2015-03-14 02:15:10"
+            "time": "2015-03-23 02:37:52"
         },
         {
             "name": "doctrine/annotations",
@@ -2999,7 +2999,7 @@
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/devel",
-                "reference": "2df5df2706f53d16372bb2990eaef8c4db10631f"
+                "reference": "797c6410437968d2337882f2b6751a956da63c4b"
             },
             "dist": {
                 "type": "zip",
@@ -3038,15 +3038,13 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2015-03-18 20:45:37"
+            "time": "2015-03-24 20:00:01"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/config_installer": 20,
-        "davidbarratt/davidwbarratt": 20,
-        "drupal/devel": 20
+        "davidbarratt/davidwbarratt": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
