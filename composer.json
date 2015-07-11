@@ -8,6 +8,8 @@
     "composer/installers": "^1.0.20",
     "drupal/core": "~8.0",
     "drupal/config_installer": "8.1.*",
+    "netresearch/composer-patches-plugin": "^1.0.2",
+    "davidwbarratt/patches": "~1.0",
     "davidbarratt/davidwbarratt": "dev-develop"
   },
   "require-dev": {
@@ -20,13 +22,38 @@
   "prefer-stable": true,
   "repositories": [
     {
+      "type": "vcs",
+      "url": "git@github.com:netresearch/composer-patches-plugin.git"
+    },
+    {
       "type": "composer",
       "url": "http://packagist.drupal-composer.org"
     },
     {
       "type": "vcs",
       "url": "git@github.com:davidbarratt/davidwbarratt.git"
-    }
+    },
+    {
+     "type": "package",
+     "package": {
+       "name": "davidwbarratt/patches",
+       "version": "1.0.7",
+       "type": "patches",
+       "extra": {
+         "patches": {
+           "drupal/core": {
+             "8.0.0-beta12": [
+               {
+                 "title": "Issue #2464055 by davidwbarratt: Installation Failure on case insensitive file systems",
+                 "url": "https://www.drupal.org/files/issues/redeclare_conf_path-2464055-5.patch",
+                 "args": "-d ../"
+               }
+             ]
+           }
+         }
+       }
+     }
+   }
   ],
   "config": {
     "autoloader-suffix": "Drupal8"
