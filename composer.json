@@ -44,7 +44,7 @@
            "drupal/core": {
              "8.0.0-beta12": [
                {
-                 "title": "Issue #2464055 by davidwbarratt: Installation Failure on case insensitive file systems",
+                 "title": "Issue #2464055: Installation Failure on case insensitive file systems",
                  "url": "https://www.drupal.org/files/issues/redeclare_conf_path-2464055-5.patch",
                  "args": "-d ../"
                }
